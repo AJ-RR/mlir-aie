@@ -13,12 +13,14 @@ targetname=matrixMultiplication
 
 M?=640
 K?=896
-N?=768
+N?=32
 m?=16
-k?=32
-n?=48
-n_aie_cols?=2
+k?=8
+n?=8
+n_aie_cols?=4
 b_col_maj?=0
+#dtype_in?=i16
+#dtype_out?=i16
 
 kernels=mm_${m}x${k}x${n}
 aieargs+=-m $m -k $k -n $n --n-aie-cols ${n_aie_cols} --b-col-maj ${b_col_maj}

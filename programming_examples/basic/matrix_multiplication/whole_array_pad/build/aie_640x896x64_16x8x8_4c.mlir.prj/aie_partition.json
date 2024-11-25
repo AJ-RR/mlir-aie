@@ -1,0 +1,33 @@
+{
+  "aie_partition": {
+    "name": "QoS",
+    "operations_per_cycle": "2048",
+    "inference_fingerprint": "23423",
+    "pre_post_fingerprint": "12345",
+    "partition": {
+      "column_width": 4,
+      "start_columns": [
+        1
+      ]
+    },
+    "PDIs": [
+      {
+        "uuid": "bc73857f-4023-46d9-a2fa-6c89c6d5f239",
+        "file_name": "./design.pdi",
+        "cdo_groups": [
+          {
+            "name": "DPU",
+            "type": "PRIMARY",
+            "pdi_id": "0x01",
+            "dpu_kernel_ids": [
+              "0x901"
+            ],
+            "pre_cdo_groups": [
+              "0xC1"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

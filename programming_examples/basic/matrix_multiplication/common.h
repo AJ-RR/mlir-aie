@@ -50,7 +50,7 @@ void add_default_options(po::options_description &desc) {
       "the input xclbin path")(
       "kernel,k", po::value<std::string>()->required(),
       "the kernel name in the XCLBIN (for instance PP_PRE_FD)")(
-      "verbosity,v", po::value<int>()->default_value(0),
+      "verbosity,v", po::value<int>()->default_value(2),
       "the verbosity of the output")(
       "instr,i", po::value<std::string>()->required(),
       "path of file containing userspace instructions sent to the NPU")(
@@ -65,7 +65,10 @@ void add_default_options(po::options_description &desc) {
       "trace_file", po::value<std::string>()->default_value("trace.txt"),
       "where to store trace output")("b_col_maj",
                                      po::value<int>()->default_value(0),
-                                     "Is B matrix in colum-major format?");
+                                     "Is B matrix in colum-major format?")(
+      "m,m_size",po::value<int>()->default_value(64), "subtile size m")(
+      "k,k_size",po::value<int>()->default_value(64), "subtile size k")(
+      "n,n_size",po::value<int>()->default_value(64), "subtile size n");
 }
 
 void parse_options(int argc, const char *argv[], po::options_description &desc,
@@ -473,5 +476,39 @@ void write_out_trace(char *traceOutPtr, size_t trace_size, std::string path) {
 }
 
 } // namespace matmul_common
+int ceil_div(int a, int b) {
+    return (a + b - 1) / b;
+}
+template <typename T>
+void padMatrixWithZeros(const std::vector<T>& original, int original_rows, int original_cols,
+                        std::vector<T>& padded, int target_rows, int target_cols) {
+    // Initialize the padded matrix with zeros
+    padded.resize(target_rows * target_cols, 0);
 
+    // Copy original matrix elements to the padded matrix
+    for (int i = 0; i < original_rows; ++i) {
+        for (int j = 0; j < original_cols; ++j) {
+            // Row-major order, so index in original is i * original_cols + j
+            int original_idx = i * original_cols + j;
+            // Index in the padded matrix is i * target_cols + j
+            int padded_idx = i * target_cols + j;
+            padded[padded_idx] = original[original_idx];
+        }
+    }
+}
+template <typename T>
+void splitMatrix(const std::vector<T>& matrix, int rows, int cols, std::vector<T>& matrix1, std::vector<T>& matrix2) {
+    // Calculate the split point (half the number of rows)
+    int halfRows = rows / 2;
+
+    // Fill the first half into matrix1
+    for (int i = 0; i < halfRows * cols; ++i) {
+        matrix1.push_back(matrix[i]);
+    }
+
+    // Fill the second half into matrix2
+    for (int i = halfRows * cols; i < rows * cols; ++i) {
+        matrix2.push_back(matrix[i]);
+    }
+}
 #endif
