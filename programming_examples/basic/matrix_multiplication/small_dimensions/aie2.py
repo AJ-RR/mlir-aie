@@ -660,12 +660,10 @@ def my_matmul(
                                     ),
                                 )
                     if tb > 0 or (tb == 0 and pingpong > 0):
-                        dma_wait(*(C1_l2l3_fifos+C2_l2l3_fifos))
-            #             dma_wait(*C2_l2l3_fifos)
-            #             dma_wait(*C1_l2l3_fifos)
-            # dma_wait(*C1_l2l3_fifos)
-            # dma_wait(*C2_l2l3_fifos)
-            dma_wait(*(C1_l2l3_fifos+C2_l2l3_fifos))
+                        dma_wait(*C2_l2l3_fifos)
+                        dma_wait(*C1_l2l3_fifos)
+            dma_wait(*C1_l2l3_fifos)
+            dma_wait(*C2_l2l3_fifos)
 
 if __name__ == "__main__":
     main()

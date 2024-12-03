@@ -1622,10 +1622,10 @@ module {
       aiex.npu.blockwrite(%31) {address = 100782496 : ui32} : memref<8xi32>
       aiex.npu.address_patch {addr = 100782500 : ui32, arg_idx = 1 : i32, arg_plus = 1146880 : i32}
       aiex.npu.write32 {address = 119316 : ui32, column = 3 : i32, row = 0 : i32, value = 13 : ui32}
-      aiex.npu.sync {channel = 0 : i32, column = 0 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
-      aiex.npu.sync {channel = 0 : i32, column = 1 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       aiex.npu.sync {channel = 0 : i32, column = 2 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       aiex.npu.sync {channel = 0 : i32, column = 3 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
+      aiex.npu.sync {channel = 0 : i32, column = 0 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
+      aiex.npu.sync {channel = 0 : i32, column = 1 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       %32 = memref.get_global @blockwrite_data_0 : memref<8xi32>
       aiex.npu.blockwrite(%32) {address = 118784 : ui32} : memref<8xi32>
       aiex.npu.address_patch {addr = 118788 : ui32, arg_idx = 3 : i32, arg_plus = 16384 : i32}
@@ -1694,10 +1694,10 @@ module {
       aiex.npu.blockwrite(%47) {address = 100782240 : ui32} : memref<8xi32>
       aiex.npu.address_patch {addr = 100782244 : ui32, arg_idx = 1 : i32, arg_plus = 1802240 : i32}
       aiex.npu.write32 {address = 119316 : ui32, column = 3 : i32, row = 0 : i32, value = 5 : ui32}
-      aiex.npu.sync {channel = 0 : i32, column = 0 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
-      aiex.npu.sync {channel = 0 : i32, column = 1 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       aiex.npu.sync {channel = 0 : i32, column = 2 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       aiex.npu.sync {channel = 0 : i32, column = 3 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
+      aiex.npu.sync {channel = 0 : i32, column = 0 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
+      aiex.npu.sync {channel = 0 : i32, column = 1 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       %48 = memref.get_global @blockwrite_data_0 : memref<8xi32>
       aiex.npu.blockwrite(%48) {address = 119040 : ui32} : memref<8xi32>
       aiex.npu.address_patch {addr = 119044 : ui32, arg_idx = 3 : i32, arg_plus = 24576 : i32}
@@ -1766,10 +1766,10 @@ module {
       aiex.npu.blockwrite(%63) {address = 100782496 : ui32} : memref<8xi32>
       aiex.npu.address_patch {addr = 100782500 : ui32, arg_idx = 1 : i32, arg_plus = 2457600 : i32}
       aiex.npu.write32 {address = 119316 : ui32, column = 3 : i32, row = 0 : i32, value = 13 : ui32}
-      aiex.npu.sync {channel = 0 : i32, column = 0 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
-      aiex.npu.sync {channel = 0 : i32, column = 1 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       aiex.npu.sync {channel = 0 : i32, column = 2 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       aiex.npu.sync {channel = 0 : i32, column = 3 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
+      aiex.npu.sync {channel = 0 : i32, column = 0 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
+      aiex.npu.sync {channel = 0 : i32, column = 1 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       %64 = memref.get_global @blockwrite_data_0 : memref<8xi32>
       aiex.npu.blockwrite(%64) {address = 118784 : ui32} : memref<8xi32>
       aiex.npu.address_patch {addr = 118788 : ui32, arg_idx = 3 : i32, arg_plus = 32768 : i32}
@@ -1838,10 +1838,10 @@ module {
       aiex.npu.blockwrite(%79) {address = 100782240 : ui32} : memref<8xi32>
       aiex.npu.address_patch {addr = 100782244 : ui32, arg_idx = 1 : i32, arg_plus = 3112960 : i32}
       aiex.npu.write32 {address = 119316 : ui32, column = 3 : i32, row = 0 : i32, value = 5 : ui32}
-      aiex.npu.sync {channel = 0 : i32, column = 0 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
-      aiex.npu.sync {channel = 0 : i32, column = 1 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       aiex.npu.sync {channel = 0 : i32, column = 2 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       aiex.npu.sync {channel = 0 : i32, column = 3 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
+      aiex.npu.sync {channel = 0 : i32, column = 0 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
+      aiex.npu.sync {channel = 0 : i32, column = 1 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       aiex.npu.sync {channel = 0 : i32, column = 0 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       aiex.npu.sync {channel = 0 : i32, column = 1 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}
       aiex.npu.sync {channel = 0 : i32, column = 2 : i32, column_num = 1 : i32, direction = 0 : i32, row = 0 : i32, row_num = 1 : i32}

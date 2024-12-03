@@ -1679,10 +1679,10 @@ module {
       aiex.npu.dma_memcpy_nd(0, 0, %arg4[0, 0, 0, 4104][2, 1, 128, 8][2048, 32, 16, 1]) {id = 8 : i64, metadata = @C2_L2L3_1} : memref<20480xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg1[0, 0, 0, 409600][1, 40, 64, 32][0, 32, 1280, 1]) {id = 11 : i64, metadata = @A2_L3L2_1} : memref<1638400xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg1[0, 0, 0, 573440][1, 40, 64, 32][0, 32, 1280, 1]) {id = 13 : i64, metadata = @A2_L3L2_1} : memref<1638400xi16>
-      aiex.npu.dma_wait {symbol = @C1_L2L3_0}
-      aiex.npu.dma_wait {symbol = @C1_L2L3_1}
       aiex.npu.dma_wait {symbol = @C2_L2L3_0}
       aiex.npu.dma_wait {symbol = @C2_L2L3_1}
+      aiex.npu.dma_wait {symbol = @C1_L2L3_0}
+      aiex.npu.dma_wait {symbol = @C1_L2L3_1}
       aiex.npu.dma_memcpy_nd(0, 0, %arg3[0, 0, 0, 8192][2, 1, 128, 8][2048, 32, 16, 1]) {id = 0 : i64, metadata = @C1_L2L3_0} : memref<20480xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg0[0, 0, 0, 655360][1, 40, 64, 32][0, 32, 1280, 1]) {id = 1 : i64, metadata = @A1_L3L2_0} : memref<1638400xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg2[0, 0, 0, 0][1, 40, 32, 8][32, 512, 16, 1]) {id = 5 : i64, metadata = @B_L3L2_0} : memref<20480xi16>
@@ -1699,10 +1699,10 @@ module {
       aiex.npu.dma_memcpy_nd(0, 0, %arg4[0, 0, 0, 8200][2, 1, 128, 8][2048, 32, 16, 1]) {id = 0 : i64, metadata = @C2_L2L3_1} : memref<20480xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg1[0, 0, 0, 737280][1, 40, 64, 32][0, 32, 1280, 1]) {id = 3 : i64, metadata = @A2_L3L2_1} : memref<1638400xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg1[0, 0, 0, 901120][1, 40, 64, 32][0, 32, 1280, 1]) {id = 5 : i64, metadata = @A2_L3L2_1} : memref<1638400xi16>
-      aiex.npu.dma_wait {symbol = @C1_L2L3_0}
-      aiex.npu.dma_wait {symbol = @C1_L2L3_1}
       aiex.npu.dma_wait {symbol = @C2_L2L3_0}
       aiex.npu.dma_wait {symbol = @C2_L2L3_1}
+      aiex.npu.dma_wait {symbol = @C1_L2L3_0}
+      aiex.npu.dma_wait {symbol = @C1_L2L3_1}
       aiex.npu.dma_memcpy_nd(0, 0, %arg3[0, 0, 0, 12288][2, 1, 128, 8][2048, 32, 16, 1]) {id = 8 : i64, metadata = @C1_L2L3_0} : memref<20480xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg0[0, 0, 0, 983040][1, 40, 64, 32][0, 32, 1280, 1]) {id = 9 : i64, metadata = @A1_L3L2_0} : memref<1638400xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg2[0, 0, 0, 0][1, 40, 32, 8][32, 512, 16, 1]) {id = 13 : i64, metadata = @B_L3L2_0} : memref<20480xi16>
@@ -1719,10 +1719,10 @@ module {
       aiex.npu.dma_memcpy_nd(0, 0, %arg4[0, 0, 0, 12296][2, 1, 128, 8][2048, 32, 16, 1]) {id = 8 : i64, metadata = @C2_L2L3_1} : memref<20480xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg1[0, 0, 0, 1064960][1, 40, 64, 32][0, 32, 1280, 1]) {id = 11 : i64, metadata = @A2_L3L2_1} : memref<1638400xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg1[0, 0, 0, 1228800][1, 40, 64, 32][0, 32, 1280, 1]) {id = 13 : i64, metadata = @A2_L3L2_1} : memref<1638400xi16>
-      aiex.npu.dma_wait {symbol = @C1_L2L3_0}
-      aiex.npu.dma_wait {symbol = @C1_L2L3_1}
       aiex.npu.dma_wait {symbol = @C2_L2L3_0}
       aiex.npu.dma_wait {symbol = @C2_L2L3_1}
+      aiex.npu.dma_wait {symbol = @C1_L2L3_0}
+      aiex.npu.dma_wait {symbol = @C1_L2L3_1}
       aiex.npu.dma_memcpy_nd(0, 0, %arg3[0, 0, 0, 16384][2, 1, 128, 8][2048, 32, 16, 1]) {id = 0 : i64, metadata = @C1_L2L3_0} : memref<20480xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg0[0, 0, 0, 1310720][1, 40, 64, 32][0, 32, 1280, 1]) {id = 1 : i64, metadata = @A1_L3L2_0} : memref<1638400xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg2[0, 0, 0, 0][1, 40, 32, 8][32, 512, 16, 1]) {id = 5 : i64, metadata = @B_L3L2_0} : memref<20480xi16>
@@ -1739,10 +1739,10 @@ module {
       aiex.npu.dma_memcpy_nd(0, 0, %arg4[0, 0, 0, 16392][2, 1, 128, 8][2048, 32, 16, 1]) {id = 0 : i64, metadata = @C2_L2L3_1} : memref<20480xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg1[0, 0, 0, 1392640][1, 40, 64, 32][0, 32, 1280, 1]) {id = 3 : i64, metadata = @A2_L3L2_1} : memref<1638400xi16>
       aiex.npu.dma_memcpy_nd(0, 0, %arg1[0, 0, 0, 1556480][1, 40, 64, 32][0, 32, 1280, 1]) {id = 5 : i64, metadata = @A2_L3L2_1} : memref<1638400xi16>
-      aiex.npu.dma_wait {symbol = @C1_L2L3_0}
-      aiex.npu.dma_wait {symbol = @C1_L2L3_1}
       aiex.npu.dma_wait {symbol = @C2_L2L3_0}
       aiex.npu.dma_wait {symbol = @C2_L2L3_1}
+      aiex.npu.dma_wait {symbol = @C1_L2L3_0}
+      aiex.npu.dma_wait {symbol = @C1_L2L3_1}
       aiex.npu.dma_wait {symbol = @C1_L2L3_0}
       aiex.npu.dma_wait {symbol = @C1_L2L3_1}
       aiex.npu.dma_wait {symbol = @C2_L2L3_0}

@@ -8,14 +8,14 @@ Size of original A: 3276800
 Kernel COMPLETE
 Size of Output: 40960
 
-Avg NPU matmul time: 2767us.
-Avg NPU gflops: 37.8958
+Avg NPU matmul time: 2676us.
+Avg NPU gflops: 39.1845
 
-Min NPU matmul time: 2767us.
-Max NPU gflops: 37.8958
+Min NPU matmul time: 2676us.
+Max NPU gflops: 39.1845
 
-Max NPU matmul time: 2767us.
-Min NPU gflops: 37.8958
+Max NPU matmul time: 2676us.
+Min NPU gflops: 39.1845
 
 PASS!
 
