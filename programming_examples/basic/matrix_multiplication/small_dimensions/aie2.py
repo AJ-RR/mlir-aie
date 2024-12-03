@@ -612,7 +612,7 @@ def my_matmul(
                                 A_offset = A_block_offset + A_row_offset
                                 npu_dma_memcpy_nd(
                                     metadata=A2_l3l2_fifos[col%2],
-                                    bd_id=bd_id_base + 2 * tile_row + 1,
+                                    bd_id=bd_id_base + 2 * tile_row + 3,
                                     mem=A2,
                                     offsets=[0, 0, 0, A_offset],
                                     sizes=[
@@ -645,7 +645,7 @@ def my_matmul(
                                 B_col_offset = col * n if not b_col_maj else col * n * K
                                 npu_dma_memcpy_nd(
                                     metadata=B_l3l2_fifos[col],
-                                    bd_id=bd_id_base + 2 * tile_row + 2,
+                                    bd_id=bd_id_base + 2 * tile_row + 5,
                                     mem=B,
                                     offsets=[0, 0, 0, B_col_offset],
                                     sizes=(
@@ -660,11 +660,12 @@ def my_matmul(
                                     ),
                                 )
                     if tb > 0 or (tb == 0 and pingpong > 0):
-                        dma_wait(*C1_l2l3_fifos)
-                        dma_wait(*C2_l2l3_fifos)
-            dma_wait(*C1_l2l3_fifos)
-            dma_wait(*C2_l2l3_fifos)
-
+                        dma_wait(*(C1_l2l3_fifos+C2_l2l3_fifos))
+            #             dma_wait(*C2_l2l3_fifos)
+            #             dma_wait(*C1_l2l3_fifos)
+            # dma_wait(*C1_l2l3_fifos)
+            # dma_wait(*C2_l2l3_fifos)
+            dma_wait(*(C1_l2l3_fifos+C2_l2l3_fifos))
 
 if __name__ == "__main__":
     main()

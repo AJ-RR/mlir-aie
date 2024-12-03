@@ -1,14 +1,28 @@
-export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplication.exe -x build/final_256x256x512_64x64x64_4c.xclbin -i build/insts_256x256x512_64x64x64_4c.txt -k MLIR_AIE -M 256 -K 256 -N 512 --b_col_maj 0
-
-Avg NPU matmul time: 2088us.
-Avg NPU gflops: 32.1403
-
-Min NPU matmul time: 2088us.
-Max NPU gflops: 32.1403
-
-Max NPU matmul time: 2088us.
-Min NPU gflops: 32.1403
-
-PASS!
-
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplication -Dsubdir=whole_array
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplication.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplication.dir/whole_array/test.cpp.o

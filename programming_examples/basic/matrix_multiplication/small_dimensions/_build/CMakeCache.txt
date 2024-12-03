@@ -48,7 +48,7 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-13
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-13
 
 //Flags used by the CXX compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int32_t -DDTYPE_ACC=int32_t
+CMAKE_CXX_FLAGS:STRING=-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
