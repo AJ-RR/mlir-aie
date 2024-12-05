@@ -13,10 +13,10 @@ targetname=matrixMultiplication
 
 M=640
 K?=640
-N?=32
-m?=32
-k?=32
-n?=8
+N?=64
+m?=4
+k?=4
+n?=4
 n_aie_cols?=4
 b_col_maj?=0
 dtype_in?=i16

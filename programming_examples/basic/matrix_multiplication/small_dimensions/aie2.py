@@ -141,7 +141,7 @@ def my_matmul(
     # a big performance cost.
     fifo_depth = 2
 
-    n_tiles_per_core = (2*M1 // m) * (N // n) // n_aie_cores # Used only for C. How many chunks of mxn for each core.
+    n_tiles_per_core = (M1 // m) * (N // n) // n_aie_cores # Used only for C. How many chunks of mxn for each core.
 
     # n_A_tiles_per_shim = n_aie_rows // n_aie_cols  # Probably not required when hardcoding the two halves of A
     n_A_tiles_per_shim = 2
@@ -660,10 +660,12 @@ def my_matmul(
                                     ),
                                 )
                     if tb > 0 or (tb == 0 and pingpong > 0):
-                        dma_wait(*C2_l2l3_fifos)
-                        dma_wait(*C1_l2l3_fifos)
-            dma_wait(*C1_l2l3_fifos)
-            dma_wait(*C2_l2l3_fifos)
+                        # dma_wait(*C2_l2l3_fifos)
+                        # dma_wait(*C1_l2l3_fifos)
+                        dma_wait(*C2_l2l3_fifos, *C1_l2l3_fifos)
+            # dma_wait(*C1_l2l3_fifos)
+            # dma_wait(*C2_l2l3_fifos)
+            dma_wait(*C2_l2l3_fifos, *C1_l2l3_fifos)
 
 if __name__ == "__main__":
     main()

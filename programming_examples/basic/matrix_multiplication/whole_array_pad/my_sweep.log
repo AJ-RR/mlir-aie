@@ -1,14 +1,14 @@
 SHELL=/bin/bash
 JUPYTERHUB_SERVICE_URL=http://0.0.0.0:8888/user/ucsd-mlir-ajay-ramesh-ranganathan/
-HOSTNAME=91521e57d749
+HOSTNAME=1a484cc8f91d
 LANGUAGE=en_US:en
-JUPYTERHUB_API_TOKEN=10d097406e484391a4cb4aa423bb9056
+JUPYTERHUB_API_TOKEN=e412fd0966564d40a8e48c18276550a7
 JUPYTERHUB_BASE_URL=/
 JUPYTERHUB_PUBLIC_URL=
 XILINX_XRT=/opt/xilinx/xrt
 n_aie_cols=4
 PWD=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad
-JUPYTER_SERVER_URL=http://91521e57d749:8888/user/ucsd-mlir-ajay-ramesh-ranganathan/
+JUPYTER_SERVER_URL=http://1a484cc8f91d:8888/user/ucsd-mlir-ajay-ramesh-ranganathan/
 JUPYTERHUB_SERVER_NAME=
 LINES=39
 n=8
@@ -19,7 +19,7 @@ HOME=/home/mliraie
 LANG=en_US.UTF-8
 PEANO_INSTALL_DIR=/home/mliraie/mlir-aie/my_install/llvm-aie
 LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:
-JPY_API_TOKEN=10d097406e484391a4cb4aa423bb9056
+JPY_API_TOKEN=e412fd0966564d40a8e48c18276550a7
 COLUMNS=144
 VIRTUAL_ENV=/home/mliraie/mlir-aie/ironenv
 JUPYTERHUB_SERVICE_PREFIX=/user/ucsd-mlir-ajay-ramesh-ranganathan/
@@ -68,7 +68,7 @@ srcdir := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 subdir=whole_array_pad
 targetname=matrixMultiplicationPadded
 
-M=1280
+M=2560
 K?=1280
 N?=16
 m?=32
@@ -105,7 +105,7 @@ build/mm_${m}x${k}x${n}.o: build/mm_b_col_maj_${m}x${k}x${n}.o
 endifrm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -130,9 +130,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -146,9 +146,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -199,16 +199,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -243,22 +243,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2386.00us.
-Avg NPU gflops: 21.97
+Avg NPU matmul time: 1064.25us.
+Avg NPU gflops: 98.53
 
-Min NPU matmul time: 2386.00us.
-Max NPU gflops: 21.97
+Min NPU matmul time: 924.00us.
+Max NPU gflops: 113.48
 
-Max NPU matmul time: 2386.00us.
-Min NPU gflops: 21.97
+Max NPU matmul time: 2872.00us.
+Min NPU gflops: 36.51
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -283,9 +340,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -299,9 +356,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -352,16 +409,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -396,22 +453,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2446.00us.
-Avg NPU gflops: 21.43
+Avg NPU matmul time: 1019.40us.
+Avg NPU gflops: 102.86
 
-Min NPU matmul time: 2446.00us.
-Max NPU gflops: 21.43
+Min NPU matmul time: 874.00us.
+Max NPU gflops: 119.97
 
-Max NPU matmul time: 2446.00us.
-Min NPU gflops: 21.43
+Max NPU matmul time: 2723.00us.
+Min NPU gflops: 38.51
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -436,9 +550,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -452,9 +566,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -505,16 +619,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -549,22 +663,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2417.00us.
-Avg NPU gflops: 21.69
+Avg NPU matmul time: 1040.70us.
+Avg NPU gflops: 100.76
 
-Min NPU matmul time: 2417.00us.
-Max NPU gflops: 21.69
+Min NPU matmul time: 913.00us.
+Max NPU gflops: 114.85
 
-Max NPU matmul time: 2417.00us.
-Min NPU gflops: 21.69
+Max NPU matmul time: 2791.00us.
+Min NPU gflops: 37.57
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -589,9 +760,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -605,9 +776,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -658,16 +829,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -702,22 +873,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2472.00us.
-Avg NPU gflops: 21.21
+Avg NPU matmul time: 1028.85us.
+Avg NPU gflops: 101.92
 
-Min NPU matmul time: 2472.00us.
-Max NPU gflops: 21.21
+Min NPU matmul time: 872.00us.
+Max NPU gflops: 120.25
 
-Max NPU matmul time: 2472.00us.
-Min NPU gflops: 21.21
+Max NPU matmul time: 2713.00us.
+Min NPU gflops: 38.65
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -742,9 +970,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -758,9 +986,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -811,16 +1039,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -855,22 +1083,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2562.00us.
-Avg NPU gflops: 20.46
+Avg NPU matmul time: 1036.65us.
+Avg NPU gflops: 101.15
 
-Min NPU matmul time: 2562.00us.
-Max NPU gflops: 20.46
+Min NPU matmul time: 875.00us.
+Max NPU gflops: 119.84
 
-Max NPU matmul time: 2562.00us.
-Min NPU gflops: 20.46
+Max NPU matmul time: 2779.00us.
+Min NPU gflops: 37.73
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -895,9 +1180,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -911,9 +1196,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -964,16 +1249,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -1008,22 +1293,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2465.00us.
-Avg NPU gflops: 21.27
+Avg NPU matmul time: 1043.75us.
+Avg NPU gflops: 100.46
 
-Min NPU matmul time: 2465.00us.
-Max NPU gflops: 21.27
+Min NPU matmul time: 861.00us.
+Max NPU gflops: 121.79
 
-Max NPU matmul time: 2465.00us.
-Min NPU gflops: 21.27
+Max NPU matmul time: 2811.00us.
+Min NPU gflops: 37.30
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -1048,9 +1390,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -1064,9 +1406,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -1117,16 +1459,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -1161,22 +1503,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2417.00us.
-Avg NPU gflops: 21.69
+Avg NPU matmul time: 1033.75us.
+Avg NPU gflops: 101.43
 
-Min NPU matmul time: 2417.00us.
-Max NPU gflops: 21.69
+Min NPU matmul time: 869.00us.
+Max NPU gflops: 120.66
 
-Max NPU matmul time: 2417.00us.
-Min NPU gflops: 21.69
+Max NPU matmul time: 2701.00us.
+Min NPU gflops: 38.82
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -1201,9 +1600,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -1217,9 +1616,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -1270,16 +1669,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -1314,22 +1713,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2490.00us.
-Avg NPU gflops: 21.06
+Avg NPU matmul time: 1007.60us.
+Avg NPU gflops: 104.07
 
-Min NPU matmul time: 2490.00us.
-Max NPU gflops: 21.06
+Min NPU matmul time: 854.00us.
+Max NPU gflops: 122.78
 
-Max NPU matmul time: 2490.00us.
-Min NPU gflops: 21.06
+Max NPU matmul time: 2804.00us.
+Min NPU gflops: 37.40
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -1354,9 +1810,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -1370,9 +1826,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -1423,16 +1879,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -1467,22 +1923,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2458.00us.
-Avg NPU gflops: 21.33
+Avg NPU matmul time: 1170.60us.
+Avg NPU gflops: 89.58
 
-Min NPU matmul time: 2458.00us.
-Max NPU gflops: 21.33
+Min NPU matmul time: 866.00us.
+Max NPU gflops: 121.08
 
-Max NPU matmul time: 2458.00us.
-Min NPU gflops: 21.33
+Max NPU matmul time: 3974.00us.
+Min NPU gflops: 26.39
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -1507,9 +2020,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -1523,9 +2036,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -1576,16 +2089,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -1620,22 +2133,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2394.00us.
-Avg NPU gflops: 21.90
+Avg NPU matmul time: 1030.25us.
+Avg NPU gflops: 101.78
 
-Min NPU matmul time: 2394.00us.
-Max NPU gflops: 21.90
+Min NPU matmul time: 865.00us.
+Max NPU gflops: 121.22
 
-Max NPU matmul time: 2394.00us.
-Min NPU gflops: 21.90
+Max NPU matmul time: 2700.00us.
+Min NPU gflops: 38.84
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -1660,9 +2230,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -1676,9 +2246,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -1729,16 +2299,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -1773,22 +2343,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2439.00us.
-Avg NPU gflops: 21.50
+Avg NPU matmul time: 1037.65us.
+Avg NPU gflops: 101.05
 
-Min NPU matmul time: 2439.00us.
-Max NPU gflops: 21.50
+Min NPU matmul time: 856.00us.
+Max NPU gflops: 122.50
 
-Max NPU matmul time: 2439.00us.
-Min NPU gflops: 21.50
+Max NPU matmul time: 2782.00us.
+Min NPU gflops: 37.69
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -1813,9 +2440,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -1829,9 +2456,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -1882,16 +2509,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -1926,22 +2553,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2461.00us.
-Avg NPU gflops: 21.30
+Avg NPU matmul time: 1054.10us.
+Avg NPU gflops: 99.48
 
-Min NPU matmul time: 2461.00us.
-Max NPU gflops: 21.30
+Min NPU matmul time: 874.00us.
+Max NPU gflops: 119.97
 
-Max NPU matmul time: 2461.00us.
-Min NPU gflops: 21.30
+Max NPU matmul time: 2934.00us.
+Min NPU gflops: 35.74
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -1966,9 +2650,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -1982,9 +2666,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -2035,16 +2719,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -2079,22 +2763,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2468.00us.
-Avg NPU gflops: 21.24
+Avg NPU matmul time: 1007.50us.
+Avg NPU gflops: 104.08
 
-Min NPU matmul time: 2468.00us.
-Max NPU gflops: 21.24
+Min NPU matmul time: 869.00us.
+Max NPU gflops: 120.66
 
-Max NPU matmul time: 2468.00us.
-Min NPU gflops: 21.24
+Max NPU matmul time: 2688.00us.
+Min NPU gflops: 39.01
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -2119,9 +2860,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -2135,9 +2876,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -2188,16 +2929,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -2232,22 +2973,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 3188.00us.
-Avg NPU gflops: 16.45
+Avg NPU matmul time: 1018.90us.
+Avg NPU gflops: 102.91
 
-Min NPU matmul time: 3188.00us.
-Max NPU gflops: 16.45
+Min NPU matmul time: 867.00us.
+Max NPU gflops: 120.94
 
-Max NPU matmul time: 3188.00us.
-Min NPU gflops: 16.45
+Max NPU matmul time: 2707.00us.
+Min NPU gflops: 38.74
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -2272,9 +3070,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -2288,9 +3086,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -2341,16 +3139,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -2385,22 +3183,79 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2389.00us.
-Avg NPU gflops: 21.95
+Avg NPU matmul time: 1066.05us.
+Avg NPU gflops: 98.36
 
-Min NPU matmul time: 2389.00us.
-Max NPU gflops: 21.95
+Min NPU matmul time: 915.00us.
+Max NPU gflops: 114.60
 
-Max NPU matmul time: 2389.00us.
-Min NPU gflops: 21.95
+Max NPU matmul time: 3254.00us.
+Min NPU gflops: 32.22
 
 PASS!
 
 rm -rf tmpTrace parse*.json trace*json trace.txt
 rm -rf build _build matrixMultiplicationPadded.exe
 mkdir -p build
-python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280x1280x16_32x32x8_4c.mlir
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M 2560 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_2560x1280x16_32x32x8_4c.mlir
 mkdir -p build
 cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
 clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
@@ -2425,9 +3280,9 @@ ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
 ar: creating build/mm_32x32x8.o
 a - build/mm_b_row_maj_32x32x8.o
 mkdir -p build
-cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280x1280x16_32x32x8_4c.xclbin \
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_2560x1280x16_32x32x8_4c.xclbin \
 			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
-			--aie-generate-npu --npu-insts-name=insts_1280x1280x16_32x32x8_4c.txt ../build/aie_1280x1280x16_32x32x8_4c.mlir
+			--aie-generate-npu --npu-insts-name=insts_2560x1280x16_32x32x8_4c.txt ../build/aie_2560x1280x16_32x32x8_4c.mlir
 
 
 ****** Bootgen v2024.1
@@ -2441,9 +3296,9 @@ cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_12
 Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
 Found xchesscc at /opt/vitis_aie_essentials
  AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
-Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/build/aie_2560x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
 rm -rf _build
 mkdir -p _build
 cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
@@ -2494,16 +3349,16 @@ gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic
 gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array_pad/_build'
 cp _build/matrixMultiplicationPadded matrixMultiplicationPadded.exe 
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -2538,15 +3393,72 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2449.00us.
-Avg NPU gflops: 21.41
+Avg NPU matmul time: 1043.60us.
+Avg NPU gflops: 100.48
 
-Min NPU matmul time: 2449.00us.
-Max NPU gflops: 21.41
+Min NPU matmul time: 910.00us.
+Max NPU gflops: 115.23
 
-Max NPU matmul time: 2449.00us.
-Min NPU gflops: 21.41
+Max NPU matmul time: 2845.00us.
+Min NPU gflops: 36.86
 
 PASS!
 

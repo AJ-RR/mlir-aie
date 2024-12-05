@@ -11,7 +11,7 @@ srcdir := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 subdir=whole_array_pad
 targetname=matrixMultiplicationPadded
 
-M=1280
+M=2560
 K?=1280
 N?=16
 m?=32

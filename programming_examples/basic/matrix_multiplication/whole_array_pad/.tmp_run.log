@@ -1,14 +1,14 @@
 export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
- ./matrixMultiplicationPadded.exe -x build/final_1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 1280 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
-Matrix size 1280x1280x16
-Final M=1280
+ ./matrixMultiplicationPadded.exe -x build/final_2560x1280x16_32x32x8_4c.xclbin -i build/insts_2560x1280x16_32x32x8_4c.txt -k MLIR_AIE -M 2560 -K 1280 -N 16 --b_col_maj 0 --m 32 --n 8 --k 32
+Matrix size 2560x1280x16
+Final M=2560
 Final K=1280
 Final N=32
-Sequence instr count: 2164
-Loading xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Sequence instr count: 4324
+Loading xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Kernel opcode: MLIR_AIE
 Name: MLIR_AIE
-Registering xclbin: build/final_1280x1280x16_32x32x8_4c.xclbin
+Registering xclbin: build/final_2560x1280x16_32x32x8_4c.xclbin
 Getting hardware context.
 Getting handle to kernel:MLIR_AIE
 Writing data into buffer objects.
@@ -43,15 +43,72 @@ B =
 Running Kernel (iteration 0).
 Verifying against reference matmul ...
 Verify time: 0.00 s.
+Running Kernel (iteration 1).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 2).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 3).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 4).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 5).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 6).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 7).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 8).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 9).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 10).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 11).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 12).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 13).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 14).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 15).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 16).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 17).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 18).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+Running Kernel (iteration 19).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
 
-Avg NPU matmul time: 2449.00us.
-Avg NPU gflops: 21.41
+Avg NPU matmul time: 1043.60us.
+Avg NPU gflops: 100.48
 
-Min NPU matmul time: 2449.00us.
-Max NPU gflops: 21.41
+Min NPU matmul time: 910.00us.
+Max NPU gflops: 115.23
 
-Max NPU matmul time: 2449.00us.
-Min NPU gflops: 21.41
+Max NPU matmul time: 2845.00us.
+Min NPU gflops: 36.86
 
 PASS!
 

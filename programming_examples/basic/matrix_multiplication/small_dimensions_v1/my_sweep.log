@@ -1,0 +1,1976 @@
+SHELL=/bin/bash
+JUPYTERHUB_SERVICE_URL=http://0.0.0.0:8888/user/ucsd-mlir-ajay-ramesh-ranganathan/
+HOSTNAME=28d634e17d23
+LANGUAGE=en_US:en
+JUPYTERHUB_API_TOKEN=c4de462dd303433abce6e7c427a8160c
+JUPYTERHUB_BASE_URL=/
+JUPYTERHUB_PUBLIC_URL=
+XILINX_XRT=/opt/xilinx/xrt
+n_aie_cols=4
+PWD=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions
+JUPYTER_SERVER_URL=http://28d634e17d23:8888/user/ucsd-mlir-ajay-ramesh-ranganathan/
+JUPYTERHUB_SERVER_NAME=
+LINES=39
+n=8
+m=32
+k=32
+XRT_HACK_UNSECURE_LOADING_XCLBIN=1
+HOME=/home/mliraie
+LANG=en_US.UTF-8
+PEANO_INSTALL_DIR=/home/mliraie/mlir-aie/my_install/llvm-aie
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:
+JPY_API_TOKEN=c4de462dd303433abce6e7c427a8160c
+COLUMNS=149
+VIRTUAL_ENV=/home/mliraie/mlir-aie/ironenv
+JUPYTERHUB_SERVICE_PREFIX=/user/ucsd-mlir-ajay-ramesh-ranganathan/
+XILINXD_LICENSE_FILE=/opt/Xilinx.lic
+JUPYTERHUB_OAUTH_CALLBACK_URL=/user/ucsd-mlir-ajay-ramesh-ranganathan/oauth_callback
+JUPYTERHUB_ROOT_DIR=/notebooks
+JUPYTERHUB_OAUTH_CLIENT_ALLOWED_SCOPES=[]
+JUPYTER_IMAGE_SPEC=mlir-aie:latest
+LIC_MAC=58:47:ca:71:b3:c0
+LESSCLOSE=/usr/bin/lesspipe %s %s
+JUPYTER_SERVER_ROOT=/notebooks
+PYTHONPATH=/home/mliraie/mlir-aie/my_install/mlir_aie/python:/opt/xilinx/xrt/python
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+JUPYTERHUB_OAUTH_ACCESS_SCOPES=["access:servers!server=ucsd-mlir-ajay-ramesh-ranganathan/", "access:servers!user=ucsd-mlir-ajay-ramesh-ranganathan"]
+JUPYTERHUB_COOKIE_HOST_PREFIX_ENABLED=0
+SHLVL=2
+PYXTERM_DIMENSIONS=80x25
+JUPYTERHUB_API_URL=http://192.168.252.2:8081/hub/api
+JUPYTERHUB_CLIENT_ID=jupyterhub-user-ucsd-mlir-ajay-ramesh-ranganathan
+JUPYTERHUB_OAUTH_SCOPES=["access:servers!server=ucsd-mlir-ajay-ramesh-ranganathan/", "access:servers!user=ucsd-mlir-ajay-ramesh-ranganathan"]
+JUPYTERHUB_PUBLIC_HUB_URL=
+VIRTUAL_ENV_PROMPT=(ironenv) 
+JUPYTERHUB_HOST=
+JUPYTERHUB_DEBUG=1
+LD_LIBRARY_PATH=/home/mliraie/mlir-aie/my_install/llvm-aie/lib:/home/mliraie/mlir-aie/my_install/mlir_aie/lib:/home/mliraie/mlir-aie/my_install/mlir/lib:/opt/xilinx/xrt/lib
+dtype_out=i16
+DEBUGINFOD_URLS=https://debuginfod.ubuntu.com 
+LC_ALL=en_US.UTF-8
+PATH=/home/mliraie/mlir-aie/my_install/llvm-aie/bin:/home/mliraie/mlir-aie/my_install/mlir_aie/bin:/home/mliraie/mlir-aie/my_install/mlir/bin:/home/mliraie/mlir-aie/ironenv/bin:/opt/vitis_aie_essentials/bin/:/opt/xilinx/xrt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+dtype_in=i16
+JUPYTERHUB_USER=ucsd-mlir-ajay-ramesh-ranganathan
+JUPYTERHUB_ACTIVITY_URL=http://192.168.252.2:8081/hub/api/users/ucsd-mlir-ajay-ramesh-ranganathan/activity
+_=/usr/bin/env
+##===- Makefile -----------------------------------------------------------===##
+# 
+# This file licensed under the Apache License v2.0 with LLVM Exceptions.
+# See https://llvm.org/LICENSE.txt for license information.
+# SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+#
+# Copyright (C) 2024, Advanced Micro Devices, Inc.
+# 
+##===----------------------------------------------------------------------===##
+srcdir := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
+subdir=small_dimensions
+targetname=matrixMultiplicationSmallDim
+
+M1=1280
+M2=1280
+K?=1280
+N?=16
+m?=32
+k?=32
+n?=8
+n_aie_cols?=4
+b_col_maj?=0
+dtype_in?=i16
+dtype_out?=i16
+
+kernels=mm_${m}x${k}x${n}
+aieargs+=-m $m -k $k -n $n --n-aie-cols ${n_aie_cols} --b-col-maj ${b_col_maj}
+runargs+=--b_col_maj ${b_col_maj}
+target_suffix=${M1}+${M2}x${K}x${N}_${m}x${k}x${n}_${n_aie_cols}c
+
+include ${srcdir}/../makefile-common-small-dimensions
+
+build/mm_b_row_maj_${m}x${k}x${n}.o: ${kernels_dir}/mm.cc
+	mkdir -p ${@D}
+	cd ${@D} && ${PEANO_INSTALL_DIR}/bin/clang++ ${PEANOWRAP2_FLAGS} -DBIT_WIDTH=8 -D${dtype_in}_${dtype_out}_ONLY -DDIM_M=${m} -DDIM_K=${k} -DDIM_N=${n} -c $< -o ${@F}
+
+build/mm_b_col_maj_${m}x${k}x${n}.o: ${kernels_dir}/mm_b_col_maj.cc
+	mkdir -p ${@D}
+	cd ${@D} && ${PEANO_INSTALL_DIR}/bin/clang++ ${PEANOWRAP2_FLAGS} -DBIT_WIDTH=8 -DDIM_M=${m} -DDIM_K=${k} -DDIM_N=${n} -c $< -o ${@F}
+
+ifneq (${b_col_maj}, 1)
+build/mm_${m}x${k}x${n}.o: build/mm_b_row_maj_${m}x${k}x${n}.o 
+	mkdir -p ${@D}
+	ar rvs $@ $^
+else
+build/mm_${m}x${k}x${n}.o: build/mm_b_col_maj_${m}x${k}x${n}.o
+	mkdir -p ${@D}
+	ar rvs $@ $^
+endifrm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2597us.
+Avg NPU gflops: 40.3764
+
+Min NPU matmul time: 2597us.
+Max NPU gflops: 40.3764
+
+Max NPU matmul time: 2597us.
+Min NPU gflops: 40.3764
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2593us.
+Avg NPU gflops: 40.4387
+
+Min NPU matmul time: 2593us.
+Max NPU gflops: 40.4387
+
+Max NPU matmul time: 2593us.
+Min NPU gflops: 40.4387
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2649us.
+Avg NPU gflops: 39.5838
+
+Min NPU matmul time: 2649us.
+Max NPU gflops: 39.5838
+
+Max NPU matmul time: 2649us.
+Min NPU gflops: 39.5838
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2687us.
+Avg NPU gflops: 39.024
+
+Min NPU matmul time: 2687us.
+Max NPU gflops: 39.024
+
+Max NPU matmul time: 2687us.
+Min NPU gflops: 39.024
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2701us.
+Avg NPU gflops: 38.8218
+
+Min NPU matmul time: 2701us.
+Max NPU gflops: 38.8218
+
+Max NPU matmul time: 2701us.
+Min NPU gflops: 38.8218
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2682us.
+Avg NPU gflops: 39.0968
+
+Min NPU matmul time: 2682us.
+Max NPU gflops: 39.0968
+
+Max NPU matmul time: 2682us.
+Min NPU gflops: 39.0968
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2700us.
+Avg NPU gflops: 38.8361
+
+Min NPU matmul time: 2700us.
+Max NPU gflops: 38.8361
+
+Max NPU matmul time: 2700us.
+Min NPU gflops: 38.8361
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2666us.
+Avg NPU gflops: 39.3314
+
+Min NPU matmul time: 2666us.
+Max NPU gflops: 39.3314
+
+Max NPU matmul time: 2666us.
+Min NPU gflops: 39.3314
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2748us.
+Avg NPU gflops: 38.1578
+
+Min NPU matmul time: 2748us.
+Max NPU gflops: 38.1578
+
+Max NPU matmul time: 2748us.
+Min NPU gflops: 38.1578
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2655us.
+Avg NPU gflops: 39.4944
+
+Min NPU matmul time: 2655us.
+Max NPU gflops: 39.4944
+
+Max NPU matmul time: 2655us.
+Min NPU gflops: 39.4944
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2676us.
+Avg NPU gflops: 39.1845
+
+Min NPU matmul time: 2676us.
+Max NPU gflops: 39.1845
+
+Max NPU matmul time: 2676us.
+Min NPU gflops: 39.1845
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2671us.
+Avg NPU gflops: 39.2578
+
+Min NPU matmul time: 2671us.
+Max NPU gflops: 39.2578
+
+Max NPU matmul time: 2671us.
+Min NPU gflops: 39.2578
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 3170us.
+Avg NPU gflops: 33.0781
+
+Min NPU matmul time: 3170us.
+Max NPU gflops: 33.0781
+
+Max NPU matmul time: 3170us.
+Min NPU gflops: 33.0781
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2706us.
+Avg NPU gflops: 38.75
+
+Min NPU matmul time: 2706us.
+Max NPU gflops: 38.75
+
+Max NPU matmul time: 2706us.
+Min NPU gflops: 38.75
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2632us.
+Avg NPU gflops: 39.8395
+
+Min NPU matmul time: 2632us.
+Max NPU gflops: 39.8395
+
+Max NPU matmul time: 2632us.
+Min NPU gflops: 39.8395
+
+PASS!
+
+rm -rf tmpTrace parse*.json trace*json trace.txt
+rm -rf build _build matrixMultiplicationSmallDim.exe
+mkdir -p build
+python3 /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/aie2.py -m 32 -k 32 -n 8 --n-aie-cols 4 --b-col-maj 0 -M1 1280 -M2 1280 -K 1280 -N 16 --dtype_in i16 --dtype_out i16 --trace_size 0 > build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+mkdir -p build
+cd build && /home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++ -O2 -v -std=c++20 --target=aie2-none-unknown-elf -Wno-parentheses -Wno-attributes -Wno-macro-redefined -DNDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include  -DBIT_WIDTH=8 -Di16_i16_ONLY -DDIM_M=32 -DDIM_K=32 -DDIM_N=8 -c /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc -o mm_b_row_maj_32x32x8.o
+clang version 19.0.0 (https://github.com/Xilinx/llvm-aie 6b76c280f824438759ed8282bcae6c89cd04e839)
+Target: aie2-none-unknown-elf
+Thread model: posix
+InstalledDir: /home/mliraie/mlir-aie/my_install/llvm-aie/bin
+Build config: +assertions
+Found HIP installation: /usr, version 5.7.31921
+ (in-process)
+ "/home/mliraie/mlir-aie/my_install/llvm-aie/bin/clang++" -cc1 -triple aie2-none-unknown-elf -emit-obj -disable-free -clear-ast-before-backend -main-file-name mm.cc -mrelocation-model static -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-use-init-array -mllvm -vectorize-loops=false -mllvm -vectorize-slp=false -mllvm --two-entry-phi-node-folding-threshold=10 -fno-threadsafe-statics -mllvm -mandatory-inlining-before-opt=false -mllvm -basic-aa-full-phi-analysis=true -mllvm -basic-aa-max-lookup-search-depth=10 -debugger-tuning=gdb -fdebug-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -v -fcoverage-compilation-dir=/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build -resource-dir /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19 -D NDEBUG -I /home/mliraie/mlir-aie/my_install/mlir_aie/include -D BIT_WIDTH=8 -D i16_i16_ONLY -D DIM_M=32 -D DIM_K=32 -D DIM_N=8 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1 -internal-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1 -include aiev2intrin.h -D__AIENGINE__ -D__AIEARCH__=20 -nostdsysteminc -internal-externc-isystem /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf -O2 -Wno-parentheses -Wno-attributes -Wno-macro-redefined -std=c++20 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o mm_b_row_maj_32x32x8.o -x c++ /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/../../../../aie_kernels/aie2/mm.cc
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/mliraie/mlir-aie/my_install/mlir_aie/include
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/c++/v1
+ /home/mliraie/mlir-aie/my_install/llvm-aie/bin/../include/aie2-none-unknown-elf
+ /home/mliraie/mlir-aie/my_install/llvm-aie/lib/clang/19/include
+End of search list.
+mkdir -p build
+ar rvs build/mm_32x32x8.o build/mm_b_row_maj_32x32x8.o
+ar: creating build/mm_32x32x8.o
+a - build/mm_b_row_maj_32x32x8.o
+mkdir -p build
+cd build && aiecc.py --aie-generate-cdo --no-compile-host --xclbin-name=final_1280+1280x1280x16_32x32x8_4c.xclbin \
+			 --no-xchesscc --no-xbridge --peano /home/mliraie/mlir-aie/my_install/llvm-aie \
+			--aie-generate-npu --npu-insts-name=insts_1280+1280x1280x16_32x32x8_4c.txt ../build/aie_1280+1280x1280x16_32x32x8_4c.mlir
+
+
+****** Bootgen v2024.1
+  **** Build date : Nov 13 2024-04:13:33
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+Info: Embedded Metadata section is missing project.platform.device.core element, adding it.
+Found xchesscc at /opt/vitis_aie_essentials
+ AIE Compilation: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00 17/17 4 Workers
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_elfs.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_init.bin
+Generating: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/build/aie_1280+1280x1280x16_32x32x8_4c.mlir.prj/aie_cdo_enable.bin
+rm -rf _build
+mkdir -p _build
+cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
+	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplicationSmallDim -Dsubdir=small_dimensions
+CMake Deprecation Warning at CMakeLists.txt:14 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc-13 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:47 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build
+cd _build &&  cmake --build . --config Release
+gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[ 33%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
+[ 66%] Building CXX object CMakeFiles/matrixMultiplicationSmallDim.dir/small_dimensions/test.cpp.o
+[100%] Linking CXX executable matrixMultiplicationSmallDim
+gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+[100%] Built target matrixMultiplicationSmallDim
+gmake[2]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+gmake[1]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/small_dimensions/_build'
+cp _build/matrixMultiplicationSmallDim matrixMultiplicationSmallDim.exe 
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2676us.
+Avg NPU gflops: 39.1845
+
+Min NPU matmul time: 2676us.
+Max NPU gflops: 39.1845
+
+Max NPU matmul time: 2676us.
+Min NPU gflops: 39.1845
+
+PASS!
+

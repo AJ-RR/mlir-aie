@@ -81,7 +81,7 @@ trace_xclbin_target?=build/trace_${target_suffix}.xclbin
 insts_target?=build/insts_${target_suffix}.txt
 aie_py_src?=aie2.py
 
-runargs?=-v 2 --warmup 1 --iters 1
+runargs?=-v 2 --warmup 10 --iters 20
 aieargs+=-M1 ${M1} -M2 ${M2} -K $K -N $N --dtype_in ${dtype_in} --dtype_out ${dtype_out}
 
 CHESS?=false
@@ -146,7 +146,7 @@ trace: ${targetname}.exe ${trace_xclbin_target} ${insts_target}
 	${powershell} ./$< -x ${trace_xclbin_target} -i ${insts_target} -k MLIR_AIE --M1 ${M1} --M2 ${M2} -K $K -N $N ${runargs} -t ${trace_size}
 	../../../utils/parse_trace.py --filename trace.txt --mlir ${trace_mlir_target} --colshift 1 > trace_mm.json
 
-#	${powershell} ./$< -x ${trace_xclbin_target} -i ${insts_target} -k MLIR_AIE --M1 ${M1} --M2 $M2 -K $K -N $N -v 1 --warmup 0 --iters 1 -t ${trace_size}
+#	${powershell} ./$< -x ${trace_xclbin_target} -i ${insts_target} -k MLIR_AIE --M1 ${M1} --M2 $M2 -K $K -N $N -v 1 --warmup 10 --iters 20 -t ${trace_size}
 
 .PHONY: parse_trace
 parse_trace:

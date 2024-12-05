@@ -67,6 +67,7 @@ int main(int argc, const char *argv[]) {
   int verbosity = vm["verbosity"].as<int>();
   int do_verify = vm["verify"].as<bool>();
   int n_iterations = vm["iters"].as<int>();
+    n_iterations = 20;
   int n_warmup_iterations = vm["warmup"].as<int>();
   int trace_size = vm["trace_sz"].as<int>();
   int b_col_maj = vm["b_col_maj"].as<int>();

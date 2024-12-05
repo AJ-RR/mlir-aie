@@ -6,20 +6,20 @@
 
 csv_out=my_sweep.csv
 log_out=my_sweep.log
-runargs="--iters 20 --warmup 10"
+runargs="--iters 100 --warmup 10"
 iterations=1
 
 M_lo=256
 M_step=256
 M_hi=4096
 Ms=$(seq $M_lo $M_step $M_hi)
-K_lo=256
+K_lo=1280
 K_step=256
-K_hi=4096
+K_hi=1280
 Ks=$(seq $K_lo $K_step $K_hi)
-N_lo=16
+N_lo=32
 N_step=16
-N_hi=16
+N_hi=32
 Ns=$(seq $N_lo $N_step $N_hi)
 
 export m=32

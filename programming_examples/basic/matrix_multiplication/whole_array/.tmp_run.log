@@ -1,28 +1,53 @@
-rm -rf _build
-mkdir -p _build
-cd _build &&  cmake -E env CXXFLAGS="-std=c++23 -ggdb -DDTYPE_IN=int16_t -DDTYPE_OUT=int16_t -DDTYPE_ACC=int16_t" \
-	cmake /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/.. -D CMAKE_C_COMPILER=gcc-13 -D CMAKE_CXX_COMPILER=g++-13 -DTARGET_NAME=matrixMultiplication -Dsubdir=whole_array
--- The C compiler identification is GNU 13.2.0
--- The CXX compiler identification is GNU 13.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/gcc-13 - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/g++-13 - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")
--- Configuring done (0.2s)
--- Generating done (0.0s)
--- Build files have been written to: /notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build
-cd _build &&  cmake --build . --config Release
-gmake[1]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build'
-gmake[2]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build'
-gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build'
-gmake[3]: Leaving directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build'
-gmake[3]: Entering directory '/notebooks/ajay/mlir-aie/programming_examples/basic/matrix_multiplication/whole_array/_build'
-[ 33%] Building CXX object CMakeFiles/matrixMultiplication.dir/notebooks/ajay/mlir-aie/runtime_lib/test_lib/test_utils.cpp.o
-[ 66%] Building CXX object CMakeFiles/matrixMultiplication.dir/whole_array/test.cpp.o
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplication.exe -x build/final_640x1280x32_32x32x8_4c.xclbin -i build/insts_640x1280x32_32x32x8_4c.txt -k MLIR_AIE -M 640 -K 1280 -N 32 --b_col_maj 0
+Matrix size 640x1280x32
+Sequence instr count: 1140
+Loading xclbin: build/final_640x1280x32_32x32x8_4c.xclbin
+Kernel opcode: MLIR_AIE
+Name: MLIR_AIE
+Registering xclbin: build/final_640x1280x32_32x32x8_4c.xclbin
+Getting hardware context.
+Getting handle to kernel:MLIR_AIE
+Writing data into buffer objects.
+DTYPE_IN  = int16_t
+DTYPE_OUT = int16_t
+Verification tolerance 0 absolute, 0 relative.
+A = 
+       0         1         2         3         4   ...     1275      1276      1277      1278      1279  
+    1280      1281      1282      1283      1284   ...     2555      2556      2557      2558      2559  
+    2560      2561      2562      2563      2564   ...     3835      3836      3837      3838      3839  
+    3840      3841      3842      3843      3844   ...     5115      5116      5117      5118      5119  
+    5120      5121      5122      5123      5124   ...     6395      6396      6397      6398      6399  
+    ...       ...       ...       ...       ...    ...     ...       ...       ...       ...       ...   
+   26368     26369     26370     26371     26372   ...    27643     27644     27645     27646     27647  
+   27648     27649     27650     27651     27652   ...    28923     28924     28925     28926     28927  
+   28928     28929     28930     28931     28932   ...    30203     30204     30205     30206     30207  
+   30208     30209     30210     30211     30212   ...    31483     31484     31485     31486     31487  
+   31488     31489     31490     31491     31492   ...    32763     32764     32765     32766     32767  
+B = 
+       0    -28205     26204      -615    -20312   ...    31184    -18144     18204      1198    -12521  
+   21472     20807      2552    -23138     20684   ...    31450     -4804     -1250    -16430    -31584  
+   -2176     31987      3796      6635     24368   ...    31157    -20060    -11238    -18302    -21629  
+   10208     26234    -26260     21187     -8808   ...   -31447    -26984     20234       496    -20656  
+    1536     16542    -16862    -31962     26316   ...   -25983     32736     21690      3674     24011  
+    ...       ...       ...       ...       ...    ...     ...       ...       ...       ...       ...   
+  -26496     32009    -18386     27104    -14440   ...    -8493    -15732    -18239      7138      6327  
+  -24320     26006    -17838    -25412    -22204   ...   -15032     -9172     27661    -17058     15973  
+  -27392    -28982    -12162    -12469    -21100   ...    17450      1292      5442       204    -12533  
+    8896    -23255     25692     13750      5520   ...    28773     12588     24027      8344      7806  
+   28672     11298    -31704     14287     20108   ...    11622     -6812    -19955     21208     19672  
+Running Kernel (iteration 0).
+Verifying against reference matmul ...
+Verify time: 0.00 s.
+
+Avg NPU matmul time: 2307.00us.
+Avg NPU gflops: 22.73
+
+Min NPU matmul time: 2307.00us.
+Max NPU gflops: 22.73
+
+Max NPU matmul time: 2307.00us.
+Min NPU gflops: 22.73
+
+PASS!
+

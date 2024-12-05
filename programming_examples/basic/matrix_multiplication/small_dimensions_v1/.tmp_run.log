@@ -1,0 +1,21 @@
+export XRT_HACK_UNSECURE_LOADING_XCLBIN=1 && \
+ ./matrixMultiplicationSmallDim.exe -x build/final_1280+1280x1280x16_32x32x8_4c.xclbin -i build/insts_1280+1280x1280x16_32x32x8_4c.txt -k MLIR_AIE --M1 1280 --M2 1280 -K 1280 -N 16 --b_col_maj 0
+Splitting matrix A...
+Finished splitting matrix A...
+Size of A first half: 1638400
+Size of A second half: 1638400
+Size of original A: 3276800
+Kernel COMPLETE
+Size of Output: 40960
+
+Avg NPU matmul time: 2676us.
+Avg NPU gflops: 39.1845
+
+Min NPU matmul time: 2676us.
+Max NPU gflops: 39.1845
+
+Max NPU matmul time: 2676us.
+Min NPU gflops: 39.1845
+
+PASS!
+
