@@ -9,7 +9,7 @@
 //===----------------------------------------------------------------------===//-->
 
 # Matrix Multiplication - Small-Dimension Design
-This design is inspired by the whole-array approach but is better suited for thin matrix (Matrix A) multiplication. The concept involves splitting the input matrix AA into two submatrices of equal size and performing matrix multiplication for each submatrix using two columns of the AI Engine (AIE).
+This design is inspired by the whole-array approach but is better suited for thin matrix (Matrix A) multiplication. The concept involves splitting the input matrix A into two submatrices of equal size and performing matrix multiplication for each submatrix using two columns of the AI Engine (AIE).
 
 ## Data movement inside NPU
 
