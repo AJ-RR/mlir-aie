@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 //
 // Copyright (C) 2024, Advanced Micro Devices, Inc.
-// 
+//
 //===----------------------------------------------------------------------===//-->
 
 # Matrix Multiplication
@@ -14,8 +14,10 @@ Subdirectories in this directory contain example designs that implement matrix m
 
 > These designs all follow largely the same structure and rely on the same basic concepts. The [whole-array design](whole_array/README.md) contains a representative in-depth explanation of this structure and these concepts. In the explanations for the other designs, we rely on the whole-array design as a base and only highlight the differences.
 
-* [`single_core`](single_core) - This design performs matrix-matrix multiplication on a single AI Engine core. 
+* [`single_core`](single_core) - This design performs matrix-matrix multiplication on a single AI Engine core.
 * [`whole_array`](whole_array) - This design evolves `single_core`, by splitting the computation and parallelizing it. It utilizes all available AI Engine cores simultaneously.
+* [`whole_array_pad`](whole_array_pad) - This design stems from the generalization of matrix multiplication on an NPU, achieved by automatically padding input matrices to overcome dimension divisibility constraints.
+* [`small_dimension`](small_dimension) - This design targets the special case where the input matrix A is thin, highlighting the potential to parallelize matrix multiplication by dividing AA into smaller submatrices and performing simultaneous multiplications with B.
 * [`matrix_vector`](matrix_vector) - This design is a specialization to the matrix-vector-multiplication case, which poses unique challenges due to lower computation density. *Work in progress.*
 
 ## Note on Numerical Tolerances
